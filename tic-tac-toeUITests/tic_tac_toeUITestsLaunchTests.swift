@@ -1,10 +1,3 @@
-//
-//  tic_tac_toeUITestsLaunchTests.swift
-//  tic-tac-toeUITests
-//
-//  Created by Alexey Tsutsoev on 01.03.2025.
-//
-
 import XCTest
 
 final class tic_tac_toeUITestsLaunchTests: XCTestCase {
