@@ -48,7 +48,7 @@ struct GameView: View {
                 Text("Reset Game")
             }
             .padding()
-            .background(Color.blue)
+            .background(Color.accentColor)
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding(.top, 20)
@@ -66,7 +66,7 @@ struct GameView: View {
             }
 
             Button {
-                viewModel.resetGame()
+                viewModel.onGoHome()
             } label: {
                 Text("Go to home")
             }
