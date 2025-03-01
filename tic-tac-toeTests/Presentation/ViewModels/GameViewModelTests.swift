@@ -7,7 +7,7 @@ struct GameViewModelTests {
     private let viewModel: GameViewModelProtocol
     
     init() {
-        self.viewModel = GameViewModel(onGoHome: {})
+        self.viewModel = MockGameViewModel()
     }
 
     // MARK: - Checks

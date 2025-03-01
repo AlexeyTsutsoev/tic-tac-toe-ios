@@ -1,3 +1,4 @@
+import Foundation
 import Observation
 
 @Observable final class GameViewModel: GameViewModelProtocol {
@@ -39,7 +40,12 @@ import Observation
 
         board[row][col] = current
         checkWinner()
-        current = current == .tic ? .tac : .tic
+
+        if winner == nil {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.dummyAIMove()
+            }
+        }
     }
 
     func toggleAlert() {
@@ -97,4 +103,16 @@ import Observation
         alertPresented = false
     }
 
+    private func dummyAIMove() {
+        guard winner == nil else { return }
+
+        let emptyCells = board.indices.flatMap { row in
+            board[row].indices.compactMap { col in board[row][col] == Cell.none ? (row, col) : nil }
+        }
+
+        if let randomMove = emptyCells.randomElement() {
+            board[randomMove.0][randomMove.1] = .tac
+            checkWinner()
+        }
+    }
 }
