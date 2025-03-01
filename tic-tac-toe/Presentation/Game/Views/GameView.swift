@@ -56,6 +56,9 @@ struct GameView: View {
         .onChange(of: viewModel.winner) { _, newValue in
             if newValue != nil {
                 viewModel.toggleAlert()
+                Task {
+                    await viewModel.sendResult()
+                }
             }
         }
         .alert(viewModel.title, isPresented: $viewModel.alertPresented) {

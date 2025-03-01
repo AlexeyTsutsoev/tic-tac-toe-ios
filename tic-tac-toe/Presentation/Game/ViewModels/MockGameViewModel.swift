@@ -93,4 +93,7 @@ import Observation
         alertPresented = false
     }
 
+    func sendResult() async {
+        print("mock sending result ---> \(winner?.rawValue ?? "No")")
+    }
 }
