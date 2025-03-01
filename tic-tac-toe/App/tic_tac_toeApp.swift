@@ -1,19 +1,10 @@
-//
-//  tic_tac_toeApp.swift
-//  tic-tac-toe
-//
-//  Created by Alexey Tsutsoev on 01.03.2025.
-//
-
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
-struct tic_tac_toeApp: App { // swiftlint:disable:this type_name
+struct tic_tac_toeApp: App {  // swiftlint:disable:this type_name
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let schema = Schema([])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -25,7 +16,7 @@ struct tic_tac_toeApp: App { // swiftlint:disable:this type_name
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView()
         }
         .modelContainer(sharedModelContainer)
     }

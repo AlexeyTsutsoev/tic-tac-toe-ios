@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8DC0B39A2D735C7900AF14A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0B3992D735C7900AF14A1 /* README.md */; };
 		8DC0B3BE2D735E0500AF14A1 /* pull_request_template.md in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0B3BD2D735E0500AF14A1 /* pull_request_template.md */; };
+		8DC0B4052D73757100AF14A1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0B3FF2D73757100AF14A1 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		8DC0B3862D73585C00AF14A1 /* tic-tac-toeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-toeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC0B3992D735C7900AF14A1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8DC0B3BD2D735E0500AF14A1 /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
+		8DC0B3FF2D73757100AF14A1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +86,7 @@
 			children = (
 				8DC0B3BD2D735E0500AF14A1 /* pull_request_template.md */,
 				8DC0B3992D735C7900AF14A1 /* README.md */,
+				8DC0B3FF2D73757100AF14A1 /* .swiftlint.yml */,
 				8DC0B36C2D73585B00AF14A1 /* tic-tac-toe */,
 				8DC0B37F2D73585C00AF14A1 /* tic-tac-toeTests */,
 				8DC0B3892D73585C00AF14A1 /* tic-tac-toeUITests */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC0B39A2D735C7900AF14A1 /* README.md in Resources */,
+				8DC0B4052D73757100AF14A1 /* .swiftlint.yml in Resources */,
 				8DC0B3BE2D735E0500AF14A1 /* pull_request_template.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -442,7 +446,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
