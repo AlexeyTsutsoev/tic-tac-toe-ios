@@ -14,9 +14,9 @@ extension NavigationRoute: View {
     var body: some View {
         switch self {
         case .home:
-            EmptyView() // screen will be here
+            HomeScreen()
         case .game:
-            EmptyView() // screen will be here
+            GameScreen()
         }
     }
 }

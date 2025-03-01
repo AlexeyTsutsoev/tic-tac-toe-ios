@@ -1,6 +1,20 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Best Streak:  %lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лучшая серия:  %lld"
+          }
+        }
+      }
+    },
+    "Best Streak: %lld" : {
+
+    },
     "Drawn" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +22,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ничья"
+          }
+        }
+      }
+    },
+    "Go to game" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "К игре"
           }
         }
       }
@@ -23,8 +48,21 @@
         }
       }
     },
-    "Play again" : {
+    "Loses:  %lld" : {
       "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поражения:  %lld"
+          }
+        }
+      }
+    },
+    "Loses: %lld" : {
+
+    },
+    "Play Again" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -34,7 +72,18 @@
         }
       }
     },
-    "Play Again" : {
+    "Ratio:  %lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соотношение:  %lld"
+          }
+        }
+      }
+    },
+    "Ratio: %@" : {
 
     },
     "Reset Game" : {
@@ -75,6 +124,20 @@
           }
         }
       }
+    },
+    "Wins:  %lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Победы:  %lld"
+          }
+        }
+      }
+    },
+    "Wins: %lld" : {
+
     }
   },
   "version" : "1.0"
