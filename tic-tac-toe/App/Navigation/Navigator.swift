@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Navigator: View {
     @State private var viewModel: NavigatorViewModel
-    
+
     init(viewModel: NavigatorViewModel) {
         self.viewModel = viewModel
     }
