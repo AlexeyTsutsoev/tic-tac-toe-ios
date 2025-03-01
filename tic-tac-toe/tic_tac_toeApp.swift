@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct tic_tac_toeApp: App {
+struct tic_tac_toeApp: App { // swiftlint:disable:this type_name
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
