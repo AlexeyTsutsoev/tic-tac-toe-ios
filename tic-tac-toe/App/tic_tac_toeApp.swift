@@ -16,7 +16,7 @@ struct tic_tac_toeApp: App {  // swiftlint:disable:this type_name
 
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            Navigator(viewModel: NavigatorViewModel())
         }
         .modelContainer(sharedModelContainer)
     }
