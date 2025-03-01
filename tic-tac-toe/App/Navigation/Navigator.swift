@@ -9,7 +9,7 @@ struct Navigator: View {
 
     var body: some View {
         NavigationStack(path: $viewModel.stack) {
-            EmptyView()
+            HomeScreen()
                 .navigationDestination(
                     for: NavigationRoute.self,
                     destination: { $0 }
