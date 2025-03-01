@@ -26,4 +26,8 @@ protocol GameViewModelProtocol {
 
     /// reset game after finish
     func resetGame()
+
+    /// when game is finished we should send any data
+    /// this method call mock use case
+    func sendResult() async
 }

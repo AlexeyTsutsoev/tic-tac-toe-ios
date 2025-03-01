@@ -2,6 +2,10 @@ import Foundation
 import Observation
 
 @Observable final class GameViewModel: GameViewModelProtocol {
+    // MARK: - Private Properties
+
+    private let useCase: MockGameUseCase
+
     // MARK: - Game Properties
 
     var board: [[Cell]] = Array(
@@ -26,8 +30,9 @@ import Observation
 
     // MARK: - Init
 
-    init(onGoHome: @escaping () -> Void) {
+    init(onGoHome: @escaping () -> Void, useCase: MockGameUseCase) {
         self.onGoHome = onGoHome
+        self.useCase = useCase
     }
 
     // MARK: - Open Methods
@@ -102,6 +107,16 @@ import Observation
         winner = nil
         alertPresented = false
     }
+
+    func sendResult() async {
+        do {
+            try await useCase.sendResult(win: winner == .tic)
+        } catch {
+            print("something went wrong")
+        }
+    }
+
+    // MARK: - Private methods
 
     private func dummyAIMove() {
         guard winner == nil else { return }
