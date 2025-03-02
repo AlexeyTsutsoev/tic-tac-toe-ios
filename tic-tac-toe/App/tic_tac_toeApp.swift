@@ -4,7 +4,9 @@ import SwiftUI
 @main
 struct tic_tac_toeApp: App {  // swiftlint:disable:this type_name
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([])
+        let schema = Schema([
+            GameResult.self
+        ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {

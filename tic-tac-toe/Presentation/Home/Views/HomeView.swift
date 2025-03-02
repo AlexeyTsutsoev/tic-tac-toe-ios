@@ -1,8 +1,10 @@
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
     // MARK: - State
 
+    @Query private var results: [GameResult]
     @State private var viewModel: HomeViewModelProtocol
 
     // MARK: - Init
@@ -36,7 +38,10 @@ struct HomeView: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding(.top, 20)
-
+        }
+        .onAppear {
+            viewModel.checkBestStreak()
+            viewModel.calculateStatistic(results: results)
         }
     }
 }
