@@ -11,4 +11,10 @@ protocol HomeViewModelProtocol {
 
     /// method for navigate to game
     var onGoToGame: () -> Void { get }
+
+    /// method for request best streak from storage
+    func checkBestStreak()
+
+    /// method get array from swiftData and calculate stat
+    func calculateStatistic(results: [GameResult])
 }

@@ -4,7 +4,7 @@ import Observation
 @Observable final class GameViewModel: GameViewModelProtocol {
     // MARK: - Private Properties
 
-    private let useCase: MockGameUseCase
+    private let useCase: GameUseCase
 
     // MARK: - Game Properties
 
@@ -30,7 +30,7 @@ import Observation
 
     // MARK: - Init
 
-    init(onGoHome: @escaping () -> Void, useCase: MockGameUseCase) {
+    init(onGoHome: @escaping () -> Void, useCase: GameUseCase) {
         self.onGoHome = onGoHome
         self.useCase = useCase
     }
